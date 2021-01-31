@@ -13,10 +13,6 @@ const Home = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // improve this because now it's called everytimes
-    // getMovies().then((movies) => {
-    //   setMovies(movies);
-    // });
     const fetchData = async () => {
       const resMovies = await getMovies();
       setMovies(resMovies);
